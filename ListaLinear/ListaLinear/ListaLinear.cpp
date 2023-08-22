@@ -1,3 +1,4 @@
+// Bárbara Vitória Arantes
 
 #include <iostream>
 using namespace std;
@@ -10,9 +11,10 @@ void exibirElementos();
 void inserirElemento();
 void buscarElemento();
 //--------------------------
+//void = função que não vai retornar valor
 
 
-const int MAX = 2;;
+const int MAX = 5;
 int lista[MAX]{};
 int nElementos = 0;
 
@@ -39,7 +41,7 @@ void menu()
 		cout << "Opcao: ";
 		cin >> op;
 
-		switch (op)
+		switch (op) //escolher uma entre várias possibilidades
 		{
 		case 1: inicializar();
 			break;
@@ -76,7 +78,7 @@ void exibirQuantidadeElementos() {
 
 void exibirElementos()
 {
-	if (nElementos == 0)
+	if (nElementos == 0) // == para testar igualdade
 	{
 		cout << " A lista esta vazia \n";
 	}
